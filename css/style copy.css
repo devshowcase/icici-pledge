@@ -38,23 +38,21 @@
 body{
 	margin:0;
 	padding:0;
-	/* background: url(../images/bg.jpg) no-repeat; */
+	background: url(../images/bg.jpg) no-repeat;
 	background-size:100% 100%;
 }
 .container{
 	display: flex;
 	background: url(../images/bg.jpg) no-repeat;
 	width:1920px;
-	height:965px;
+	height: 900px;
 	margin: 0 auto;
-	position: relative;
-	background-size:contain;
 }
 .leftside{
 	background: url(../images/arrow-bg.png) no-repeat;
-	background-size:contain;
-	width: 1180px;
-	height: 965px;
+	background-size:100% 100%;
+	width: 1204px;
+	height: 100vh;
 	opacity: 0;
 	transform: translateX(-100%);
 	transition: all 1s;
@@ -85,8 +83,8 @@ body{
 }
 
 .rightside{
-	width: 675px;
-	height: 662px;
+	width: 705px;
+	height: 660px;
 	position: absolute;
 	top:50%;
 	transform: translateY(-50%);
@@ -117,12 +115,12 @@ body{
 .box4{
 	top:auto;
 	left: 0;
-	bottom: -5px;
+	bottom: 0;
 }
 .box5{
 	top:auto;
 	right: 0;
-	bottom: -5px;
+	bottom: 0;
 }
 .boxtext{
 	font-family: 'ZurichBTCondensedBold';
@@ -258,16 +256,6 @@ body{
   }
 /*==========================Media Queries==========================*/
 @media screen and (max-width: 1919px) {
-	.container{
-		background-image:url(../images/bg-w1680.jpg) ;
-		width:1680px;
-		height:891px;
-	}
-	.leftside{
-		width: 1112px;
-		height: 891px;
-		background-position: -100px 0;
-	}
 	.pledge-logo{
 		left: 100px;
 	}
@@ -277,13 +265,14 @@ body{
 	.pledge-logo img{
 		width: 700px;
 	}
-
+	.leftside{
+		width: 970px;
+	}
 	.rightside{
 		right: 15px;
-		width: 624px;
-		height: 608px;
+		width: 563px;
+		height: 531px;
 	}
-		
 	.box {
 		width: 188px;
 		height: 172px;
@@ -299,12 +288,12 @@ body{
 		top:15px;
 	}
 	.box3 {
-		top: 233px;
-		left: 214px;
+		top: 195px;
+		left: 188px;
 	}
 	.modalPopup{
-		width: 624px;
-		height: 638px;
+		width: 563px;
+		height: 531px;
 		right: 15px;
 	}
 	.popupimg img{
@@ -318,38 +307,14 @@ body{
 	}
 }
 @media screen and (max-width: 1679px) {
-	.container{
-		background-image:url(../images/bg-w1600.jpg) ;
-		width:1600px;
-		height:821px;
-	}
-	.leftside{
-		width: 1112px;
-		height: 821px;
-		background-position: -40px 0;
-	}
-	.rightside {
-		right: 15px;
-		width: 594px;
-		height: 607px;
-	}
 	.pledge-logo{
 		left: 80px;
 	}
 	.box1,.box2{
 		top:20px;
 	}
-	.box3 {
-		top: 235px;
-		left: 204px;
-	}
 	.box5 {
 		bottom: 10px;
-	}
-	.modalPopup {
-		width: 594px;
-		height: 610px;
-		right: 15px;
 	}
 }
 @media screen and (max-width: 1599px) {
@@ -357,25 +322,18 @@ body{
 		width: 200px;
 	}
 	.pledge-logo{
-		left: 80px;
+		left: 50px;
 	}
 	.pledge-logo.active,.pledge-logo img{
 		width: 600px;
 	}
-	.container{
-		background-image:url(../images/bg-w1440.jpg) ;
-		width:1440px;
-		height:739px;
-	}
 	.leftside{
-		width: 1000px;
-		height: 739px;
-		background-position: -40px 0;
+		width: 825px;
 	}
 	.rightside {
 		right: 12px;
-		width: 536px;
-		height: 521px;
+		width: 475px;
+		height: 434px;
 	}
 	.boximg img {
 		height: 80px;
@@ -388,8 +346,8 @@ body{
 		top:10px;
 	}
 	.box3 {
-		top: 202px;
-		left: 183px;
+		top: 160px;
+		left: 160px;
 	}
 	.boxtext {
 		font-size: 18px;
@@ -412,21 +370,14 @@ body{
 	}
 }
 
-
-@media screen and (max-width: 1439px) {
-	.container{
-		background-image:url(../images/bg-w1366.jpg) ;
-		width:1366px;
-		height:689px;
-	}
+@media screen and (max-width: 1599px) {
 	.leftside{
-		height:689px;
-		background-position: -20px 0;
+		width: 770px;
 	}
 	.rightside {
 		right: 12px;
-		width: 508px;
-		height: 495px;
+		width: 495px;
+		height: 450px;
 	}
 	.box {
 		width: 150px;
@@ -436,72 +387,59 @@ body{
 		top:5px;
 	}
 	.box3 {
-		top: 190px;
-		left: 175px;
+		top: 170px;
+		left: 160px;
 	}
 	.modalPopup{
-		width: 508px;
-		height: 518px;
+		width: 507px;
+		height: 472px;
 		right: 12px;
 	}
+
 }
-@media screen and (max-width: 1367px) {
-	.container{
-		background-image:url(../images/bg-w1280.jpg) ;
-		width:1280px;
-		height:720px;
-	}
+@media screen and (max-width: 1439px) {
 	.leftside{
-		height:720px;
-		background-position: -80px 0;
+		width: 770px;
 	}
 	.rightside {
 		right: 12px;
-		width: 449px;
-		height: 459px;
+		width: 445px;
+		height: 434px;
 	}
-	.pledge-logo{
-		left: 70px;
+	.box {
+		width: 150px;
+		height: 133px;
 	}
 	.box1, .box2{
-		top:15px;
+		top:5px;
 	}
 	.box3 {
-		top: 175px;
-		left: 145px;
+		top: 160px;
+		left: 150px;
 	}
-	.box4{
-		bottom: 10px;
-	}
-	.modalPopup {
-		width: 450px;
-		height: 460px;
+	.modalPopup{
+		width: 445px;
+		height: 450px;
 		right: 12px;
 	}
 }
 @media screen and (max-width: 1279px) {
-	.container{
-		background-image:url(../images/bg-w1024.jpg) ;
-		width:1024px;
-		height:768px;
-	}
 	.pledge-logo{
 		left: 50px;
 	}
 	.pledge-logo.active,.pledge-logo img{
-		width: 350px;
+		width: 450px;
 	}
 	.leftside{
-		height: 768px;
-		background-position:-420px 0;
+		width: 620px;
 	}
 	.rightside {
 		right: 10px;
-		width: 482px;
+		width: 358px;
 		height: 488px;
 	}
 	.box {
-		width: 157px;
+		width: 121px;
 		height: 140px;
 	}
 	.box1, .box2{
@@ -509,7 +447,7 @@ body{
 	}
 	.box3 {
 		top: 190px;
-		left: 155px;
+		left: 120px;
 	}
 	.modalPopup{
 		right: 10px;
@@ -550,35 +488,27 @@ body{
 }
 @media screen and (max-width: 1023px) {
 	body{
-		background-image: none;
+		background-image: url(../images/mob-bg.jpg);
 	}
 	.leftside{
 		background-image: url(../images/mob-arrow-bg.png);
 		background-size:contain;
 		width: 100%;
-		background-position: 0 -280px;
+		background-position: 0 -180px;
 		transform: translateX(0%) translateY(-100%);
-	}
-	.container{
-		background: url(../images/ipad-bg.jpg) no-repeat;
-		background-size:contain ;
-		width:768px;
-		height: 1024px;
-		margin: 0 auto;
-		position: relative;
 	}
 	.leftside.active{
 		transform:translateX(0%) translateY(0%);
 	}
 	.brand-logo{
-		padding: 20px 0 0 30px;
+		padding: 30px 0 0 30px;
 	}
 	.pledge-logo{
 		position: relative;
 		top:0;
 		transform:translateY(0);
 		left: 0;
-		margin:40px auto 0;
+		margin:80px auto 0;
 		display: block;
 	}
 	.pledge-logo.active{
@@ -591,7 +521,7 @@ body{
 		bottom: 0;
 		transform: translateY(0);
 		margin: 0 auto;
-		height: 604px;
+		height: 503px;
 		max-width: 634px;
 		width: 100%;
 	}
@@ -604,7 +534,7 @@ body{
 	}
 	.box3{
 		left: 215px;
-		top:240px;
+		top:185px;
 	}
 	.box4{
 		bottom: 15px;
@@ -615,9 +545,9 @@ body{
 	.modalPopup{
 		background: rgba(0,185,189,0.95);
 		width: 637px;
-		height: 633px;
+		height: 477px;
 		top: auto;
-		bottom: 0px;
+		bottom: 30px;
 		transform:translateY(0);
 		left: 0;
 		right: 0;
@@ -644,7 +574,7 @@ body{
 		margin:30px auto 0;
 	}
 	.pledge-logo.active,.pledge-logo img{
-		width: 298px;
+		width: 250px;
 	}
 	.rightside{
 		height: 298px;
@@ -705,26 +635,6 @@ body{
 		padding: 10px;
 	}
 }
-@media all and (orientation:landscape) {
-	body{
-		background: #ffffff;
-	}
-	.container{
-		display: none;
-	}
-	.rotatescreen{
-		display: block;
-		background: url(../images/rotate-screen.png) no-repeat center center;
-		background-size: 150px ;
-		position: fixed;
-		top:0;
-		left: 0;
-		width:100%;
-		height: 100%;;
-	}
-}
-
-
 /* @media screen and (max-width: 360px) and (min-height: 640px){
 	.rightside{
 		height: 317px;
