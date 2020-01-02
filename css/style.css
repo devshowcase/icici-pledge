@@ -551,38 +551,53 @@ body{
 	}
 }
 @media screen and (max-width: 579px){
+	body{
+		background-size:cover;
+	}
+	.container{
+		background: url(../images/mob-bg.jpg) no-repeat;
+		background-size:contain ;
+		width: 360px;
+		height: 640px;
+		margin: 0 auto;
+		position: relative;
+	}
 	.leftside{
 		width: 100%;
 		background-position:0 0;
 	}
 	.pledge-logo{
-		margin:60px auto 0;
+		margin:30px auto 0;
 	}
 	.pledge-logo.active,.pledge-logo img{
-		width: 300px;
+		width: 250px;
 	}
 	.rightside{
-		height: 364px;
-		max-width: 340px;
+		height: 298px;
+		max-width: 300px;
+		bottom: 18px;
 	}
 	.box {
-		height: 117px;
-		width: 113px;
+		height: 101px;
+		width: 102px;
+	}
+	.box1,.box2{
+		top:5px;
 	}
 	.box3{
 		left: 0;
 		right: 0;
 		margin: 0 auto;
-		top:133px;
+		top:114px;
 	}
 	.box4{
-		bottom: 10px;
+		bottom: -10px;
 	}
 	.box5{
-		bottom: 10px;
+		bottom: -7px;
 	}
 	.boximg img{
-		height: 60px;
+		height: 50px;
 	}
 	.boxtext {
 		font-size: 15px;
@@ -590,10 +605,10 @@ body{
 	}
 	.modalPopup{
 		width: 100%;
-		max-width: 345px;
-		height: 333px;
+		max-width: 300px;
+		height: 298px;
 		top: auto;
-		bottom: 30px;
+		bottom: 18px;
 		transform:translateY(0);
 		left: 0;
 		right: 0;
@@ -604,7 +619,7 @@ body{
 		padding: 8px 0;
 	}
 	.popupimg img{
-		width: 65px;
+		width: 50px;
 	}
 	.title{
 		font-size: 20px;
@@ -616,7 +631,7 @@ body{
 		padding: 10px;
 	}
 }
-@media screen and (max-width: 360px) and (min-height: 640px){
+/* @media screen and (max-width: 360px) and (min-height: 640px){
 	.rightside{
 		height: 317px;
 		max-width: 303px;
@@ -743,4 +758,4 @@ body{
 		height: 361px;
 		bottom: 20px;
 	}
-}
+} */
