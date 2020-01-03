@@ -36,6 +36,12 @@ $(document).ready(function(){
 	setTimeout(function(){
 		$('.box5').fadeIn();
 	},5000);
+	setInterval(function(){
+		$('.box').addClass('pulse');
+	},5100);
+	setInterval(function(){
+		$('.box').removeClass('pulse');
+	},7000);
 });
 $(window).resize(function(){
 });
