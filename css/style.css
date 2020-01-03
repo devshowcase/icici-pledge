@@ -100,10 +100,12 @@ body{
 	text-align: center;
 	cursor: pointer;
 	display: none;
-	-webkit-animation: pulse 1s ease-in-out infinite both;
-	animation: pulse 1s ease-in-out infinite both;
+	
 }
-
+.box.pulse{
+	-webkit-animation: pulse 1s ease-in-out 2 both;
+	animation: pulse 1s ease-in-out 2 both;
+}
 .box1{
 	left: 0;
 }
@@ -357,7 +359,7 @@ body{
 }
 @media screen and (max-width: 1599px) {
 	.brand-logo img{
-		width: 200px;
+		width: 300px;
 	}
 	.pledge-logo{
 		left: 80px;
@@ -488,6 +490,12 @@ body{
 		width:1024px;
 		height:768px;
 	}
+	.brand-logo{
+		padding:45px 0 0 25px;
+	}
+	.brand-logo img{
+		width: 230PX;
+	}
 	.pledge-logo{
 		left: 50px;
 	}
@@ -496,12 +504,12 @@ body{
 	}
 	.leftside{
 		height: 768px;
-		background-position:-420px 0;
+		background-position:-460px 0;
 	}
 	.rightside {
 		right: 10px;
-		width: 482px;
-		height: 488px;
+		width: 515px;
+		height: 520px;
 	}
 	.box {
 		width: 157px;
@@ -511,13 +519,13 @@ body{
 		top:15px;
 	}
 	.box3 {
-		top: 190px;
-		left: 155px;
+		top: 203px;
+		left: 175px;
 	}
 	.modalPopup{
-		right: 10px;
-		width: 358px;
-		height: 488px;
+		right: 0;
+		width: 535PX;
+		height: 546px;
 	}
 	.title{
 		font-size: 24px;
@@ -575,6 +583,9 @@ body{
 	}
 	.brand-logo{
 		padding: 20px 0 0 30px;
+	}
+	.brand-logo img{
+		width: 260PX;
 	}
 	.pledge-logo{
 		position: relative;
@@ -642,6 +653,9 @@ body{
 	.leftside{
 		width: 100%;
 		background-position:0 0;
+	}
+	.brand-logo img{
+		width: 260px;
 	}
 	.pledge-logo{
 		margin:30px auto 0;
